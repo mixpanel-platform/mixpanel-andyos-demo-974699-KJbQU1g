@@ -376,7 +376,7 @@
             $('.date-pm').text(ampm);
 
             var pageViewParams = {limit: 25, type:'unique', unit:'day', from: moment().subtract(50, 'days'), to: moment().subtract(10, 'days')}
-            var pageViewQuery = MP.api.segment('ad.impression', 'ad.click', pageViewParams)
+            var pageViewQuery = MP.api.segment('ad.impression', 'ad category', pageViewParams)
             
 
             pageViewQuery.done(function(results){
