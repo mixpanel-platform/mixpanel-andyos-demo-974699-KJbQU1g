@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-<style>
+    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+    rel="stylesheet">
+    <link href="https://cdn.mxpnl.com/libs/mixpanel-platform/css/reset.css"
+    rel="stylesheet" type="text/css">
+    <link href=
+    "https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css"
+    rel="stylesheet" type="text/css">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <script src=
+    "https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js">
+    </script>
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet">
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+    <style>
       .content-wrapper > h3, .content-wrapper > .content-heading {
           font-size: 24px;
           line-height: 1.1;
@@ -82,170 +95,301 @@
       }
       
     </style>
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js">
+    </script>
+    <link href=
+    "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel=
+    "stylesheet" type="text/css">
 
-    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
-  </head>
-  <body class="mixpanel-platform-body">
-  <div class="content-wrapper">
-            <div class="content-heading text-center">
-               <!-- START Language list-->
-               <div class="pull-right" style="bottom: 10px;">
-                  <img src="https://d018d7277c9a2a72c253b637c4abe4d24d29449c.googledrive.com/host/0BxwayM8qQaCVOGZvekkxYTNSZVU" height="40px" width="120px">
-                  
-               </div>
-               <div class="pull-left">
-                  <img src="https://dl.dropboxusercontent.com/u/51386401/andyos.png" height="30px" width="124px">
-                  
-               </div>
-               <!-- END Language list    -->
-               Andy OS: Real-Time User Dashboard
-               <small data-localize="dashboard.WELCOME"></small>
+    <title>
+    </title>
+</head>
+
+<body class="mixpanel-platform-body">
+    <div class="content-wrapper">
+        <div class="content-heading text-center">
+            <!-- START Language list-->
+
+
+            <div class="pull-right" style="bottom: 10px;"><img height="40px"
+            src=
+            "https://d018d7277c9a2a72c253b637c4abe4d24d29449c.googledrive.com/host/0BxwayM8qQaCVOGZvekkxYTNSZVU"
+            width="120px">
             </div>
-            <!-- START widgets box-->
-            <div class="row">
-               <div class="col-lg-3 col-sm-3">
-                  <!-- START widget-->
-                  <div class="panel widget bg-primary">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-primary-dark pv-lg">
-                           <em class="icon-speedometer fa-3x"></em>
+
+
+            <div class="pull-left"><img height="30px" src=
+            "https://dl.dropboxusercontent.com/u/51386401/andyos.png" width=
+            "124px">
+            </div>
+            <!-- END Language list    -->
+            Andy OS: Real-Time User Dashboard <small data-localize=
+            "dashboard.WELCOME"></small>
+        </div>
+        <!-- START widgets box-->
+
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-3">
+                <!-- START widget-->
+
+
+                <div class="panel widget bg-primary">
+                    <div class="row row-table">
+                        <div class=
+                        "col-xs-4 text-center bg-primary-dark pv-lg">
+                            <em class="icon-speedometer fa-3x"></em>
                         </div>
+
+
                         <div class="col-xs-8 pv-lg">
-                           <div class="h2 mt0 current-users text-center">0</div>
-                           <div class="text-uppercase text-center">Current Users</div>
+                            <div class="h2 mt0 current-users text-center">
+                                0
+                            </div>
+
+
+                            <div class="text-uppercase text-center">
+                                Current Users
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-3">
-                  <!-- START widget-->
-                  <div class="panel widget bg-purple">
-                     <div class="row row-table">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-sm-3">
+                <!-- START widget-->
+
+
+                <div class="panel widget bg-purple">
+                    <div class="row row-table">
                         <div class="col-xs-4 text-center bg-purple-dark pv-lg">
-                           <em class="icon-users fa-3x"></em>
+                            <em class="icon-users fa-3x"></em>
                         </div>
+
+
                         <div class="col-xs-8 pv-lg">
-                           <div class="h2 mt0 monthly-actives text-center">0
-                              <!--<small>GB</small>-->
-                           </div>
-                           <div class="text-uppercase text-center">MAU'S</div>
+                            <div class="h2 mt0 monthly-actives text-center">
+                                0 <!--<small>GB</small>-->
+                            </div>
+
+
+                            <div class="text-uppercase text-center">
+                                MAU'S
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-3">
-                  <!-- START widget-->
-                  <div class="panel widget bg-green">
-                     <div class="row row-table">
-                        <div class="col-xs-4 text-center bg-green-dark pv-lg">
-                           <em class="icon-energy fa-3x"></em>
-                        </div>
-                        <div class="col-xs-8 pv-lg">
-                           <div class="h2 mt0 daily-actives text-center">0</div>
-                           <div class="text-uppercase text-center">DAU'S</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-<div class="col-lg-3 col-md-6 col-sm-3" style="
-    width: 200px;
-    /* height: 100px; */
-">
-                  <!-- START date widget-->
-                  <div class="panel widget" style="
-    /* height: 10%; */
-    margin-bottom: 0px;
-">
-                     <div class="row row-table" style="
-    height: 10%;
-">
-                        <div class="col-xs-4 text-center bg-green pv-lg">
-                           <!-- See formats: https://docs.angularjs.org/api/ng/filter/date-->
-                           <div data-now="" data-format="MMMM" class="text-sm date-month text-center">JUNE</div>
-                           <br>
-                           <div data-now="" data-format="D" class="h2 mt0 date-day text-center">6</div>
-                        </div>
-                        <div class="col-xs-8 pv-lg" style="
-    /* padding-bottom: 50px; */
-">
-                           <div data-now="" data-format="dddd" class="text-uppercase date-actual-day text-center">Monday</div>
-                           <br>
-                           <div data-now="" data-format="h:mm" class="h2 mt0 date-time" style="
-    margin-top: -10px;
-    padding-bottom: 30px;
-    margin-bottom: -20px;
-">1:58</div>
-                           <div data-now="" data-format="a" class="text-muted text-sm date-pm">pm</div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- END date widget    -->
-               </div>
+                    </div>
+                </div>
             </div>
 
-          <div class="row">
-                  <div class="col-lg-12">
-                     <div class="panel panel-default">
-                        <div class="panel-heading text-center">
-                           Real-Time Ad Impression -- How many ads have been viewed in the last 30 seconds?
+
+            <div class="col-lg-3 col-md-6 col-sm-3">
+                <!-- START widget-->
+
+
+                <div class="panel widget bg-green">
+                    <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-green-dark pv-lg">
+                            <em class="icon-energy fa-3x"></em>
                         </div>
-                        <div class="panel-body">
-                         <div id="datatable1_wrapper" class="dataTables_wrapper form-inline no-footer">
-                          <div class="row">
-                            <div class="col-xs-6">
-                              <div class="dataTables_length" id="datatable1_length"></div></div><div class="col-xs-6"><div id="datatable1_filter" class="dataTables_filter"></div></div></div>
-                                <table id="datatable1" class="table table-striped table-hover dataTable no-footer" role="grid" aria-describedby="datatable1_info">
-                                  <thead>
-                                  <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="datatable1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 161px;">Page Name</th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 237px;">Number of Views</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                      
-                                  </tbody>
-                                </table>
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div class="dataTables_info" id="datatable1_info" role="status" aria-live="polite">
-                                        </div>
+
+
+                        <div class="col-xs-8 pv-lg">
+                            <div class="h2 mt0 daily-actives text-center">
+                                0
+                            </div>
+
+
+                            <div class="text-uppercase text-center">
+                                DAU'S
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-3" style=
+            " width: 200px; /* height: 100px; */">
+                <!-- START date widget-->
+
+
+                <div class="panel widget" style=
+                " /* height: 10%; */ margin-bottom: 0px;">
+                    <div class="row row-table" style=" height: 10%;">
+                        <div class="col-xs-4 text-center bg-green pv-lg">
+                            <!-- See formats: https://docs.angularjs.org/api/ng/filter/date-->
+
+
+                            <div class="text-sm date-month text-center"
+                            data-format="MMMM" data-now="">
+                                JUNE
+                            </div>
+                            <br>
+
+
+                            <div class="h2 mt0 date-day text-center"
+                            data-format="D" data-now="">
+                                6
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-8 pv-lg" style=
+                        " /* padding-bottom: 50px; */">
+                            <div class=
+                            "text-uppercase date-actual-day text-center"
+                            data-format="dddd" data-now="">
+                                Monday
+                            </div>
+                            <br>
+
+
+                            <div class="h2 mt0 date-time" data-format="h:mm"
+                            data-now="" style=
+                            " margin-top: -10px; padding-bottom: 30px; margin-bottom: -20px;">
+                            1:58
+                            </div>
+
+
+                            <div class="text-muted text-sm date-pm"
+                            data-format="a" data-now="">
+                                pm
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END date widget    -->
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        Real-Time Ad Impressions -- How many ads have been
+                        viewed in the last 30 seconds (by category)?
+                    </div>
+
+
+                    <div class="panel-body">
+                        <div class="dataTables_wrapper form-inline no-footer"
+                        id="datatable1_wrapper">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="dataTables_length" id=
+                                    "datatable1_length">
                                     </div>
-                                    <div class="col-xs-6">
-                                        <div class="dataTables_paginate paging_simple_numbers" id="datatable1_paginate">
-                                            
-                                        </div>
+                                </div>
+
+
+                                <div class="col-xs-6">
+                                    <div class="dataTables_filter" id=
+                                    "datatable1_filter">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <table aria-describedby="datatable1_info" class=
+                            "table table-striped table-hover dataTable no-footer"
+                            id="datatable1" role="grid">
+                                <thead>
+                                    <tr role="row">
+                                        <th aria-controls="datatable1"
+                                        aria-label=
+                                        "Rendering engine: activate to sort column descending"
+                                        aria-sort="ascending" class=
+                                        "sorting_asc" colspan="1" rowspan="1"
+                                        style="width: 161px;" tabindex="0">Page
+                                        Name</th>
+
+                                        <th aria-controls="datatable1"
+                                        aria-label=
+                                        "Browser: activate to sort column ascending"
+                                        class="sorting" colspan="1" rowspan="1"
+                                        style="width: 237px;" tabindex="0">
+                                        Number of Views</th>
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                </tbody>
+                            </table>
+
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div aria-live="polite" class=
+                                    "dataTables_info" id="datatable1_info"
+                                    role="status">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xs-6">
+                                    <div class=
+                                    "dataTables_paginate paging_simple_numbers"
+                                    id="datatable1_paginate">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <style type="text/css">
+    .select_button
+    {
+    height: 30px !important;
+    }
+    </style><!-- demo report -->
 
-<br/><br/><br/>
 
-<style type="text/css">
-.select_button
-{
-  height: 30px !important;
-}
-</style>
-<!-- demo report -->
-<h2>Interactive Data Example</h2>
+    <h2>Interactive Data Example</h2>
+
 
     <div class="mixpanel-platform-section">
-      <div id="eventSelect" style="float: left;"></div>
-      <div id="by" class="mixpanel-platform-label" style="margin-left: 10px; display: none;">by</div>
-      <div id="propSelect" style="float: left;"></div>
-      <div id="dateSelect" style="float: right;"></div>
-      <div style="clear: both;"></div>
-      <div id="graph"></div>
+        <div id="eventSelect" style="float: left;">
+        </div>
+
+
+        <div class="mixpanel-platform-label" id="by" style=
+        "margin-left: 10px; display: none;">
+            by
+        </div>
+
+
+        <div id="propSelect" style="float: left;">
+        </div>
+
+
+        <div id="dateSelect" style="float: right;">
+        </div>
+
+
+        <div style="clear: both;">
+        </div>
+
+
+        <div id="graph">
+        </div>
     </div>
-    <div id="table"></div>
+
+
+    <div id="table">
+    </div>
     <script>
       var eventSelect = $('#eventSelect').MPEventSelect();
       var propSelect  = $('#propSelect').MPPropertySelect();
@@ -275,9 +419,8 @@
       });
       propSelect.on('change', runQuery);
       dateSelect.on('change', runQuery);
-    </script>
-
-<!-- queries for DAUs -->
+    </script> <!-- queries for DAUs -->
+     
     <script>
         /* Also, she asked about chartbeat style reports (number of simultaneous users). 
         do you think we could do these with custom reports as well? I imagine it would be just like the number of unique users who sent some selection of events at 
@@ -478,5 +621,5 @@
         }
 
     </script>
-  </body>
+</body>
 </html>
